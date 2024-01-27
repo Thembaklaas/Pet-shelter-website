@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags, title, and CSS link here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="icon" href="pet-house.png" type="image/x-icon">
+    <title>Contact Us - Pet Connect Center</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="pet-house.png" alt="Logo" height="40dp" width="40dp"/></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About us.html">About Us</a></li>
+                <li><a href="Contact us.html">Contact Us</a></li>
+                <li><a href="services.html">Adoptable Pets</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact form starts below-->
+    <!-- Form for contacting the center from user's side  -->
+    <!-- banner section  -->
+    <section class="banner">
+        <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20230822131732/images.png"
+            alt="Welcome to our Contact Us page">
+        <h1>Get in Touch With Us</h1>
+        <p>We're here to answer any questions you may have.</p>
+    </section>
+ 
+    <!-- Contact form -->
+    <section class="contact-form">
+        <div class="form-container">
+            <h2>Your Details</h2>
+            <form id="contactForm" action="" method="POST">
+ 
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" onclick="clearInitialValue(this)" required>
+ 
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" onclick="clearInitialValue(this)" required>
+ 
+                <label for="phone">Phone: </label>
+                <input type="tel" id="phone" name="phone">
+ 
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" rows="4" onclick="clearInitialValue(this)" required></textarea>
+ 
+                <!--<button type="submit" class="submit-button">Submit</button>-->
+                <button class="submit-button" onclick="validateForm()">
+                    <div class="svg-wrapper-1">
+                      <div class="svg-wrapper">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <span>Submit</span>
+                  </button>
+            </form>
+        </div>
+    </section>
+    
+    
+    <!-- Company contact info -->
+    <section class="contact-info">
+        <div id="map-container">
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe src="https://maps.google.com/maps?q=Pretoria,%20Acardia&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 660px; height: 400px;">
+                    </iframe><style>.mapouter{position:relative;height:400px;width:660px;background:#fff;} .maprouter a{color:#fff !important;position:absolute !important;top:0 !important;z-index:0 !important;}</style>
+                    <a href="https://blooketjoin.org">blooket join</a><style>.gmap_canvas{overflow:hidden;height:400px;width:660px}.gmap_canvas iframe{position:relative;z-index:2}</style>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <h2>Contact Information</h2>
+        <address>
+            Pet Connect Center<br>
+            123 Main Street<br>
+            Pretoria, 0002<br>
+            Phone: <a href="tel:1234567890">+27 12 345 6789</a><br>
+            Email: <a href="mailto:PetConnect@gmail.com">info@gmail.com</a>
+        </address>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#" rel="noopener noreferrer">Facebook</a></li>
+                    <li><a href="#" rel="noopener noreferrer">Twitter</a></li>
+                    <li><a href="#" rel="noopener noreferrer">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h4>Subscribe to Our Newsletter</h4>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Your Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="quote">
+                <p>"The greatness of a nation and its moral progress can be judged by the way its animals are treated." - Mahatma Gandhi</p>
+            </div>
+        </div>
+        <p>&copy; <span id="currentYear"></span> Pet Connect Center. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="/Assets/Js/contact.js"></script> <!-- Include JavaScript for form handling if necessary -->
+</body>
+</html>
